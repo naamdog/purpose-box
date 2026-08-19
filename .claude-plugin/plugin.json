@@ -1,0 +1,9 @@
+{
+  "name": "purpose-box",
+  "version": "0.1.0",
+  "description": "Ends every reply with a two-row bold box: PURPOSE (why the user asked this message) and SESSION (why the whole conversation exists), each in the shortest plain sentence that is still true. For anyone who runs many chats and sessions at once and loses the thread of what any one of them is for. Activates automatically on every turn via a hook.",
+  "author": { "name": "Mike Naameh" },
+  "license": "MIT",
+  "category": "productivity",
+  "keywords": ["focus", "context", "purpose", "session", "orientation", "hooks"]
+}
