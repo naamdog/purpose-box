@@ -1,10 +1,10 @@
 # Purpose Box
 
-A Claude Code plugin that ends every reply with two bold lines in a box - **why you asked this**, and **why this whole session exists** - so you never lose the thread, however many chats you have open.
+A plugin for Claude Code and Grok Build that ends every reply with two bold lines in a box - **why you asked this**, and **why this whole session exists** - so you never lose the thread, however many chats you have open.
 
 ## What it does
 
-Ships a skill (`purpose-box`) plus a `UserPromptSubmit` hook that fires on every turn and has Claude close each response with the same two-row table:
+Ships a skill (`purpose-box`) plus a `UserPromptSubmit` hook that fires on every turn and has the model close each response with the same two-row table:
 
 | **PURPOSE** | **Build the Purpose Box plugin.** |
 |---|---|
@@ -23,7 +23,23 @@ When you are building several things at once, across many sessions, the hardest 
 
 Two lines, in the same place, in the same shape, in every reply, answer that in one glance. The hook removes the remembering: it fires on every prompt, so the box is there whether or not anyone thought to ask for it.
 
-## Install
+## Install for Grok Build
+
+```powershell
+grok plugin marketplace add naamdog/purpose-box
+grok plugin install purpose-box --trust
+```
+
+Or install it with the other naamdog Grok plugins from one marketplace:
+
+```powershell
+grok plugin marketplace add naamdog/grok-plugins
+grok plugin install purpose-box --trust
+```
+
+Start a new Grok session so the skill and hook load. Manage it with `grok plugin list`, `grok plugin disable purpose-box`, or `grok plugin uninstall purpose-box`.
+
+## Install for Claude Code
 
 In any Claude Code session:
 
@@ -35,6 +51,8 @@ In any Claude Code session:
 Start a new session (or restart Claude Code) so the skill and hook load. Manage it any time with `/plugin list`, `/plugin disable purpose-box`, or `/plugin uninstall purpose-box@purpose-box`.
 
 ## macOS / Linux note
+
+Grok sets `GROK_PLUGIN_ROOT` and the `CLAUDE_PLUGIN_ROOT` alias, so the same hook file works on both Grok Build and Claude Code.
 
 The hook ships two versions of the reminder script. Both emit the exact same single-line JSON:
 

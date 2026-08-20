@@ -1,0 +1,17 @@
+{
+  "name": "purpose-box",
+  "description": "Two bold lines at the bottom of every reply - why you asked this, and why this session exists - so you never lose the thread across many chats.",
+  "owner": {
+    "name": "Mike Naameh"
+  },
+  "plugins": [
+    {
+      "name": "purpose-box",
+      "source": "./",
+      "description": "Ends every reply with a two-row bold box - PURPOSE (why the user asked this) and SESSION (why the whole conversation exists) - in the shortest plain sentence possible, so you never lose the thread across many chats. Activates automatically via a UserPromptSubmit hook.",
+      "category": "productivity",
+      "homepage": "https://github.com/naamdog/purpose-box",
+      "keywords": ["purpose box", "session", "focus", "orientation"]
+    }
+  ]
+}
