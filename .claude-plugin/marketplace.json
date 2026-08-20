@@ -7,7 +7,7 @@
   "plugins": [
     {
       "name": "purpose-box",
-      "source": "./",
+      "source": "./claude-code",
       "description": "Ends every reply with a two-row bold box - PURPOSE (why the user asked this) and SESSION (why the whole conversation exists) - in the shortest plain sentence possible, so you never lose the thread across many chats - activates automatically via a UserPromptSubmit hook."
     }
   ]
