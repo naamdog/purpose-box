@@ -1,11 +1,18 @@
 {
   "name": "purpose-box",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Ends every reply with a two-row bold box: PURPOSE (why the user asked this message) and SESSION (why the whole conversation exists), each in the shortest plain sentence that is still true. For anyone who runs many chats and sessions at once and loses the thread of what any one of them is for. Activates automatically on every turn via a hook.",
-  "author": { "name": "Mike Naameh" },
+  "author": {
+    "name": "Mike Naameh"
+  },
   "license": "MIT",
-  "homepage": "https://github.com/naamdog/purpose-box",
-  "repository": "https://github.com/naamdog/purpose-box",
-  "category": "productivity",
-  "keywords": ["focus", "context", "purpose", "session", "orientation", "hooks", "grok"]
+  "keywords": [
+    "focus",
+    "context",
+    "purpose",
+    "session",
+    "orientation",
+    "hooks"
+  ],
+  "skills": "./skills/"
 }

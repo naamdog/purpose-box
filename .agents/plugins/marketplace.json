@@ -1,0 +1,11 @@
+{
+  "name": "purpose-box",
+  "plugins": [
+    {
+      "name": "purpose-box",
+      "source": { "source": "local", "path": "./plugins/purpose-box" },
+      "policy": { "installation": "AVAILABLE" },
+      "category": "productivity"
+    }
+  ]
+}

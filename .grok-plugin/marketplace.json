@@ -7,11 +7,19 @@
   "plugins": [
     {
       "name": "purpose-box",
-      "source": "./",
-      "description": "Ends every reply with a two-row bold box - PURPOSE (why the user asked this) and SESSION (why the whole conversation exists) - in the shortest plain sentence possible, so you never lose the thread across many chats. Activates automatically via a UserPromptSubmit hook.",
+      "source": {
+        "type": "local",
+        "path": "./grok"
+      },
+      "description": "Ends every reply with a two-row bold box - PURPOSE (why the user asked this) and SESSION (why the whole conversation exists) - in the shortest plain sentence possible, so you never lose the thread across many chats. Installs the skill, plus a one-time /purpose-box-setup command that writes the always-on rules file.",
       "category": "productivity",
       "homepage": "https://github.com/naamdog/purpose-box",
-      "keywords": ["purpose box", "session", "focus", "orientation"]
+      "keywords": [
+        "purpose box",
+        "session",
+        "focus",
+        "orientation"
+      ]
     }
   ]
 }
