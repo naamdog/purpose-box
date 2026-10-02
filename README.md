@@ -59,13 +59,7 @@ The hook ships two versions of the reminder script. Both emit the exact same sin
 - `hooks/purpose-box-reminder.ps1` - Windows (PowerShell). This is the one wired up in `hooks/hooks.json` by default.
 - `hooks/purpose-box-reminder.sh` - macOS/Linux (POSIX `sh`).
 
-If you're on macOS or Linux, switch `hooks/hooks.json` over to the `.sh` script:
-
-1. Make it executable once (it's already tracked with the executable bit set, but if that's ever lost): `chmod +x hooks/purpose-box-reminder.sh`
-2. Edit `hooks/hooks.json` and replace the PowerShell `command` value with:
-   ```
-   "\"${CLAUDE_PLUGIN_ROOT}/hooks/purpose-box-reminder.sh\""
-   ```
+The Claude Code hook picks the right script by itself: when Windows PowerShell is available it runs the `.ps1`, otherwise it runs the `.sh` with `sh`. Nothing needs editing on macOS or Linux.
 
 `hooks.json` can't hold comments, which is why this note lives here instead.
 
